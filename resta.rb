@@ -1,2 +1,2 @@
-class rest
+class restsadsad
 	.end
