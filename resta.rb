@@ -1,2 +1,0 @@
-class restsadsad
-	.end

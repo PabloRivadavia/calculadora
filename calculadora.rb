@@ -1,2 +1,0 @@
-class calculadora
-end

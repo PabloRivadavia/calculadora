@@ -1,2 +1,0 @@
-class cuadrado
-end
