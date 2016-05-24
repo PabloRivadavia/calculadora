@@ -18,14 +18,14 @@ class Calculator
 		division: '/',
 		inverse: 'INV',
 		square: 'SQ',
-		square_root:'SQRT',
+		square_root:'SQRT'
 
 	}
 	def add_operand (operand)
-		if @current_operation¡
-			@current_operation.add_operand (operand)
+		if @current_operation
+			@current_operation.add_operand(operand)
 		else
-			@operand_temp =operand
+			@operand_temp = operand
 		end
 
 	end
@@ -37,15 +37,15 @@ class Calculator
 			when OPERATIONS[:multiplication] then Multiplication
 			when OPERATIONS[:division] then Division
 			when OPERATIONS[:inverse] then Inverse
-			when OPERATIONS[:square_root] then Square_Root
+			when OPERATIONS[:square_root] then SquareRoot
 			when OPERATIONS[:square] then Square
 	end
-		@current_operation=operation_class.new(@operand_temp)
-		@operand_temp=''
+		@current_operation = operation_class.new(@operand_temp)
+		@operand_temp = ''
 		end
 
 	def execute
-		result=@current_operation.execute
+		result = @current_operation.execute
 		clear
 		result
 	rescue ZeroDivisionError

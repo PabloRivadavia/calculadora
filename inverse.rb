@@ -1,6 +1,6 @@
 require_relative 'unary_operation'
-class Inverse <BinaryOperation
-	def Execute
-	@result=1/@operand_1
+class Inverse  < UnaryOperation
+	def execute
+	@result = 1 / @operand
     end
 end
